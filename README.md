@@ -3,5 +3,3 @@
 > Status do projeto: Iniciando
 > 
 :)
-:)
-:)
