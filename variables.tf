@@ -59,12 +59,12 @@ variable "zones" {
 
 # Path to your public key, which will be used to log in to ece instances
 variable "public_key" {
-  default = "~/.ssh/id_rsa.pub"
+  default = "~/.ssh/IaC-DEV.pub"
 }
 
 # Path to your private key that matches your public from ^^
 variable "private_key" {
-  default = "~/.ssh/id_rsa"
+  default = "~/.ssh/IaC-DEV"
 }
 
 #######################################################
@@ -90,7 +90,7 @@ variable "cidr" {
 
 # ECE instance type
 variable "aws_instance_type" {
-  default = "i3.xlarge"
+  default = "t2.micro"
 }
 
 # The device name of the non-root volume that will be used by ECE
