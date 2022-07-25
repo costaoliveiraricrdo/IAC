@@ -54,7 +54,7 @@ variable "remote_user" {
 # Desired AZs, must have 3.
 variable "zones" {
   type    = list(string)
-  default = ["a","b","c"]
+  default = ["a", "b", "c"]
 }
 
 # Path to your public key, which will be used to log in to ece instances
@@ -74,13 +74,13 @@ variable "private_key" {
 # Ece version to be installed by ansible
 # Must be supported by the ansible playbook
 variable "ece-version" {
-  default="2.5.0"
+  default = "2.5.0"
 }
 
 # Time (sec) to wait for cloud instances to come
 # up before running the ece installer (ansible)
 variable "sleep-timeout" {
-  default="30"
+  default = "30"
 }
 
 # ECE instances's VPC & Subnet cidr
@@ -97,5 +97,5 @@ variable "aws_instance_type" {
 # For i3 instances, this is nvme0n1.
 # If you use a different instance type, this value will change and might also require changes to the resource definition in servers.tf
 variable "device_name" {
-  default="nvme0n1"
+  default = "nvme0n1"
 }

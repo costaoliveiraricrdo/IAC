@@ -40,15 +40,15 @@ resource "aws_instance" "server" {
 }
 
 data "template_file" "ansible-install" {
-  template = file("ansible-install.sh")
+  template   = file("ansible-install.sh")
   depends_on = [aws_instance.server]
   vars = {
     # Created servers and appropriate AZs
-    ece-server0 = aws_instance.server.0.public_dns
+    ece-server0      = aws_instance.server.0.public_dns
     ece-server0-zone = aws_instance.server.0.availability_zone
-    ece-server1 = aws_instance.server.1.public_dns
+    ece-server1      = aws_instance.server.1.public_dns
     ece-server1-zone = aws_instance.server.1.availability_zone
-    ece-server2 = aws_instance.server.2.public_dns
+    ece-server2      = aws_instance.server.2.public_dns
     ece-server2-zone = aws_instance.server.2.availability_zone
 
     # Keys to server
