@@ -1,8 +1,8 @@
 ## See variables.tf for descriptions
 
-project_name = "ece-terraform-example"
+project_name = "aws-terraform-ansible"
 
-trusted_network = "<your ip>/32"
+trusted_network = "0.0.0.0/32"
 
 ## AWS provider settings
 aws_access_key = "<your key>"
