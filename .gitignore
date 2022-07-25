@@ -6,5 +6,9 @@
 *.tfstate
 *.tfstate.*
 
+# .tfvars files
+*.tfvars
+*.tfvars.*
+
 # .SSH Keys files
 *.pem
